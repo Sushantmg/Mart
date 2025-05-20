@@ -13,6 +13,9 @@ import CartPage from './pages/CartPage.jsx'
 import App from './App.jsx'
 import ManageProducts from './components/Admin/ManageProducts.jsx'
 import ManageUsers from './components/Admin/ManageUsers.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+import ProductPage from './pages/ProductPage.jsx'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,7 +23,9 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <App /> },         // Home as default route
       { path: 'cart', element: <CartPage /> },
-      
+      { path: 'products', element: <ProductsPage /> },
+      { path: 'products/:id', element: <ProductPage /> },
+
     ],
   },
   {

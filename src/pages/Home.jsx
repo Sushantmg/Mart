@@ -5,6 +5,7 @@ import AD from '../components/Home/AD';
 import Categories from '../components/Home/Categories';
 import Products from './Products';
 import Footer from './Footer';
+import Img from '../components/Img';
 export default function Home() {
     return (
         <main className="w-full relative overflow-hidden dark:bg-gray-900">
@@ -19,6 +20,8 @@ export default function Home() {
             <div className="-mt-12 relative z-10">
                 <AD />
             </div>
+
+
 
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Img = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-100 to-green-200 dark:from-gray-800 dark:to-gray-900 px-4  transition-colors duration-500">
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-green-100 to-green-200 dark:from-gray-900 dark:to-gray-900 px-4  transition-colors duration-500">
             <div className="backdrop-blur-xl bg-white/20 dark:bg-white/10 border border-white/30 dark:border-white/20 rounded-3xl shadow-2xl p-10 w-full max-w-7xl text-center">
                 <h1 className="text-4xl font-extrabold text-green-500 drop-shadow mb-8 dark:text-green-300">
                     Download our App!
