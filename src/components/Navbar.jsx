@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   ShoppingCartIcon,
   PhoneIcon,
@@ -7,11 +7,11 @@ import {
   Bars3Icon,
   XMarkIcon,
   UserIcon,
-} from '@heroicons/react/24/outline';
-import { FiShoppingBag } from 'react-icons/fi';
-import Searchbar from './Searchbar';
-import { useThemeContext } from '../context/ThemeContext';
-import { NavLink, useNavigate } from 'react-router-dom';
+} from "@heroicons/react/24/outline";
+import { FiShoppingBag } from "react-icons/fi";
+import Searchbar from "./Searchbar";
+import { useThemeContext } from "../context/ThemeContext";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { darkMode, toggleTheme } = useThemeContext();
@@ -21,15 +21,15 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const token = localStorage.getItem('ecom-token');
+    const token = localStorage.getItem("ecom-token");
     setIsLoggedIn(!!token);
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem('ecom-token');
+    localStorage.removeItem("ecom-token");
     setIsLoggedIn(false);
     setMobileMenuOpen(false);
-    navigate('/login'); // redirect to login page on logout
+    navigate("/login"); // redirect to login page on logout
   };
 
   return (
@@ -112,14 +112,16 @@ const Navbar = () => {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-30 z-40" onClick={() => setMobileMenuOpen(false)}></div>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-30 z-40"
+          onClick={() => setMobileMenuOpen(false)}
+        ></div>
       )}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg z-50 transform transition-transform duration-300 ease-in-out
-          ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex flex-col p-6 space-y-6 text-primary dark:text-green-400">
-          
           {isLoggedIn ? (
             <button
               onClick={handleLogout}
@@ -150,10 +152,6 @@ const Navbar = () => {
             <PhoneIcon className="h-6 w-6" strokeWidth={2} />
             <span className="text-gray-600 dark:text-white">9814149723</span>
           </div>
-
-          
-
-          
 
           <button
             onClick={() => {

@@ -1,9 +1,8 @@
-
-import Img from './components/Img'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import Categories from './components/Home/Categories'
-import { Toaster } from 'react-hot-toast';
+import Img from "./components/Img";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Categories from "./components/Home/Categories";
+import { Toaster } from "react-hot-toast";
 const App = () => {
   return (
     <>
@@ -14,7 +13,8 @@ const App = () => {
       <Products />
       <Img />
     </>
-  )
-}
+  );
 
-export default App
+};
+
+export default App;

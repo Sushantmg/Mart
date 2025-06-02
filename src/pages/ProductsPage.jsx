@@ -3,6 +3,7 @@ import { useCart } from "../context/CartContext";
 import toast from "react-hot-toast";
 import { Link } from "react-router";
 
+
 export default function ProductsPage() {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
